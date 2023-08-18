@@ -60,8 +60,12 @@
                                             <constraint firstAttribute="height" constant="30" id="8Uh-D9-2wa"/>
                                             <constraint firstAttribute="width" constant="30" id="mcA-K6-IY8"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UrA-Fn-8Ri"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,6 +89,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumNameLabel" destination="EHW-D9-zbm" id="duJ-dh-BTE"/>
+                <outlet property="artistNameLabel" destination="gmJ-2A-oTW" id="ryV-Ki-Ihz"/>
+                <outlet property="mainImageView" destination="SSj-cE-CnG" id="zW7-o4-dzG"/>
+                <outlet property="releaseDateLabel" destination="l3u-jI-KYa" id="tIR-to-9Q9"/>
+                <outlet property="saveButton" destination="kzQ-nM-f2N" id="Bd8-rX-H0s"/>
+                <outlet property="songNameLabel" destination="i1W-EC-nmi" id="3EK-mP-6r1"/>
+            </connections>
             <point key="canvasLocation" x="214.50381679389312" y="49.295774647887328"/>
         </tableViewCell>
     </objects>
@@ -95,6 +107,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

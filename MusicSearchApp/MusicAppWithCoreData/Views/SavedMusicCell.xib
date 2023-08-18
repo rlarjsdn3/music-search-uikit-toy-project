@@ -74,6 +74,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="수정"/>
+                                        <connections>
+                                            <action selector="updateButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CQb-ax-d8k"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IK-vl-EnT">
                                         <rect key="frame" x="203" y="0.0" width="30" height="30"/>
@@ -81,8 +84,12 @@
                                             <constraint firstAttribute="height" constant="30" id="hwW-GF-ckC"/>
                                             <constraint firstAttribute="width" constant="30" id="pkl-GA-EZf"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bgs-Qw-IvU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -108,6 +115,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumNameLabel" destination="pHw-Om-OGQ" id="pNy-eS-f4T"/>
+                <outlet property="artistNameLabel" destination="NDK-kr-Hsc" id="PsD-OR-TNf"/>
+                <outlet property="mainImageView" destination="f7F-V7-3HW" id="UW9-ef-FBo"/>
+                <outlet property="messageLabel" destination="gY5-fT-XuU" id="Kb9-ZI-nib"/>
+                <outlet property="releaseDateLabel" destination="hOU-Q5-hpG" id="DgK-nk-a3q"/>
+                <outlet property="saveButton" destination="4IK-vl-EnT" id="SZM-fa-gwr"/>
+                <outlet property="saveDateLabel" destination="S0a-Bc-pC9" id="Uyy-XW-8iZ"/>
+                <outlet property="songNameLabel" destination="rwb-ar-gCi" id="ceg-WX-4PQ"/>
+                <outlet property="updateButton" destination="4O8-kc-43A" id="XEl-db-AmY"/>
+            </connections>
             <point key="canvasLocation" x="194.6564885496183" y="73.591549295774655"/>
         </tableViewCell>
     </objects>
@@ -115,6 +133,9 @@
         <image name="heart" catalog="system" width="128" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
