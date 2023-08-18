@@ -29,7 +29,7 @@ class MusicCell: UITableViewCell {
     
     // 셀이 재사용되기 전에 호출되는 메서드
     override func prepareForReuse() {
-        self.prepareForReuse()
+        super.prepareForReuse()
         // 스크롤을 해서 셀이 재사용될 때, 이미지가 바뀌는 현상을 없애기 위함
         self.mainImageView.image = nil
     }

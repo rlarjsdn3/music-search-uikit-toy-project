@@ -37,6 +37,7 @@ final class NetworkManager {
     
     // 실제 API로 데이터를 요청하는 함수(비동기)
     private func performRequest(with urlString: String, completionHandler: @escaping NetworkCompletion) {
+        print(#function)
         // 유효한 주소인지 검사
         guard let url = URL(string: urlString) else { return }
         // 새로운 세션 생성하기
@@ -50,6 +51,7 @@ final class NetworkManager {
             }
             // 상태 코드가 200번대가 아니라면
             guard let statusCode = (response as? HTTPURLResponse)?.statusCode, (200..<300) ~= statusCode else {
+                print((response as? HTTPURLResponse)?.statusCode)
                 completionHandler(.failure(.networkError))
                 return
             }

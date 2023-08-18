@@ -79,7 +79,7 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="SSj-cE-CnG" secondAttribute="trailing" constant="20" id="2li-hc-YtO"/>
+                    <constraint firstItem="cqM-Il-NWQ" firstAttribute="trailing" secondItem="SSj-cE-CnG" secondAttribute="trailing" constant="279" id="2li-hc-YtO"/>
                     <constraint firstItem="SSj-cE-CnG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="53S-Zx-ZkL"/>
                     <constraint firstItem="cqM-Il-NWQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KXu-7f-uk6"/>
                     <constraint firstAttribute="trailing" secondItem="cqM-Il-NWQ" secondAttribute="trailing" constant="20" id="PAW-Lo-dX9"/>

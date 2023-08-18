@@ -31,6 +31,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e87-2k-du0"/>
+                    <connections>
+                        <outlet property="musicTableView" destination="Zii-nG-znf" id="JCa-LB-Qvx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Saved List View Controller-->
         <scene sceneID="gFM-ZN-o9g">
             <objects>
-                <viewController id="ym0-O3-bis" sceneMemberID="viewController">
+                <viewController id="ym0-O3-bis" customClass="SavedListViewController" customModule="MusicAppWithCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wWJ-qX-OAd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +83,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WUU-5F-D3k"/>
+                    <connections>
+                        <outlet property="musicTableView" destination="Yab-QH-TOB" id="Y1b-RN-wo5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkl-Ls-nv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

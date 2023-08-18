@@ -12,7 +12,7 @@ import Foundation
 // 사용하게 될 API 문자열 묶음
 public enum MusicApi {
     static let requestUrl = "https://itunes.apple.com/search?"
-    static let mdediaParam = "media=musci"
+    static let mdediaParam = "media=music"
 }
 
 // 사용하게 될 Cell 문자열 묶음
