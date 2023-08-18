@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E4D20D92A8F02FA00E54808 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D20D72A8F02FA00E54808 /* MusicCell.swift */; };
+		9E4D20DA2A8F02FA00E54808 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D20D82A8F02FA00E54808 /* MusicCell.xib */; };
+		9E4D20DD2A8F052C00E54808 /* SavedMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D20DB2A8F052C00E54808 /* SavedMusicCell.swift */; };
+		9E4D20DE2A8F052C00E54808 /* SavedMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D20DC2A8F052C00E54808 /* SavedMusicCell.xib */; };
 		9EC755862A8DAF2000993F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC755852A8DAF2000993F38 /* AppDelegate.swift */; };
 		9EC755882A8DAF2000993F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC755872A8DAF2000993F38 /* SceneDelegate.swift */; };
 		9EC7558A2A8DAF2000993F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC755892A8DAF2000993F38 /* ViewController.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E4D20D72A8F02FA00E54808 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		9E4D20D82A8F02FA00E54808 /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		9E4D20DB2A8F052C00E54808 /* SavedMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMusicCell.swift; sourceTree = "<group>"; };
+		9E4D20DC2A8F052C00E54808 /* SavedMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedMusicCell.xib; sourceTree = "<group>"; };
 		9EC755822A8DAF2000993F38 /* MusicAppWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAppWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC755852A8DAF2000993F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC755872A8DAF2000993F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,9 +98,9 @@
 		9EC7559C2A8DB0D500993F38 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9EC755A52A8DB1DA00993F38 /* Music.swift */,
 				9EC755A12A8DB15100993F38 /* MusicSaved+CoreDataClass.swift */,
 				9EC755A22A8DB15100993F38 /* MusicSaved+CoreDataProperties.swift */,
-				9EC755A52A8DB1DA00993F38 /* Music.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				9EC7558B2A8DAF2000993F38 /* Main.storyboard */,
+				9E4D20D72A8F02FA00E54808 /* MusicCell.swift */,
+				9E4D20D82A8F02FA00E54808 /* MusicCell.xib */,
+				9E4D20DB2A8F052C00E54808 /* SavedMusicCell.swift */,
+				9E4D20DC2A8F052C00E54808 /* SavedMusicCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,7 +203,9 @@
 			files = (
 				9EC755952A8DAF2100993F38 /* LaunchScreen.storyboard in Resources */,
 				9EC755922A8DAF2100993F38 /* Assets.xcassets in Resources */,
+				9E4D20DE2A8F052C00E54808 /* SavedMusicCell.xib in Resources */,
 				9EC7558D2A8DAF2000993F38 /* Main.storyboard in Resources */,
+				9E4D20DA2A8F02FA00E54808 /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,10 +223,12 @@
 				9EC755862A8DAF2000993F38 /* AppDelegate.swift in Sources */,
 				9EC755902A8DAF2000993F38 /* MusicSaved.xcdatamodeld in Sources */,
 				9EC755A62A8DB1DA00993F38 /* Music.swift in Sources */,
+				9E4D20DD2A8F052C00E54808 /* SavedMusicCell.swift in Sources */,
 				9EC755882A8DAF2000993F38 /* SceneDelegate.swift in Sources */,
 				9EC755A42A8DB15100993F38 /* MusicSaved+CoreDataProperties.swift in Sources */,
 				9EC755A82A8DB56700993F38 /* Constants.swift in Sources */,
 				9EC755AE2A8DBC6900993F38 /* CoreDataManager.swift in Sources */,
+				9E4D20D92A8F02FA00E54808 /* MusicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
