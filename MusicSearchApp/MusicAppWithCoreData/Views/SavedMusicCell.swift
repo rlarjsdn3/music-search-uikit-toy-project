@@ -31,10 +31,11 @@ class SavedMusicCell: UITableViewCell {
     }
     
     // (커스텀 델리게이트를 대신해) 클로저를 실행해 뷰 컨트롤러에서 필요한 작업을 수행함
-    var updateButtonTapped: ((SavedMusicCell) -> Void) = { (sender) in }
+    var saveButtonTapped: ((SavedMusicCell) -> Void) = { (sender) in }
     
     // (커스텀 델리게이트를 대신해) 클로저를 실행해 뷰 컨트롤러에서 필요한 작업을 수행함
-    var saveButtonTapped: ((SavedMusicCell) -> Void) = { (sender) in }
+    var updateButtonTapped: ((SavedMusicCell, String?) -> Void) = { (sender, message) in }
+    
     
     // 셀이 재사용되기 전에 호출되는 메서드
     override func prepareForReuse() {
@@ -92,13 +93,14 @@ class SavedMusicCell: UITableViewCell {
         saveButton.setImage(UIImage(systemName: "heart"), for: .normal)
     }
     
-    @IBAction func updateButtonPressed(_ sender: UIButton) {
-        // 뷰 컨트롤러에서 전달 받은 클로저 실행
-        updateButtonTapped(self)
-    }
-    
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         // 뷰 컨트롤러에서 전달 받은 클로저 실행
         saveButtonTapped(self)
     }
+    
+    @IBAction func updateButtonPressed(_ sender: UIButton) {
+        // 뷰 컨트롤러에서 전달 받은 클로저 실행
+        updateButtonTapped(self, musicSaved?.myMessage)
+    }
+    
 }

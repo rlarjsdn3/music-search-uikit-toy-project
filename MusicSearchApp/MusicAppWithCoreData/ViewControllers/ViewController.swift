@@ -135,11 +135,10 @@ extension ViewController: UITableViewDataSource {
         let music = musicManager.getMusicArrayFromAPI()[indexPath.row]
         cell.music = music
         
-        // 셀에서 저장 버튼을 클릭하면 수행할 동작 전달하기
+        // 셀에서 하트 버튼을 클릭하면 수행할 동작 전달하기
         // 강한 순환 참조를 피하기 위해 약한 캡처하기
         cell.saveButtonTapped = { [weak self] (senderCell, isSaved) in
-            // 뷰 컨트롤러가 메모리에 여전히 남아있는지 확인
-            // 약한 참조를 하게 되면 자신의 뷰 컨트롤러 객체에 접근할 때마다
+            // 약한 캡처를 하게 되면 자신의 뷰 컨트롤러 객체에 접근할 때마다
             // 옵셔널로 접근(self?.)해야 하는데, 이를 피하기 위해서 아래 코드를 작성
             guard let self = self else { return }
             
@@ -151,7 +150,7 @@ extension ViewController: UITableViewDataSource {
                     if removeAction {
                         self.musicManager.deleteMusicFromCoreData(with: music) {
                             // ❗️셀의 music 객체의 isSaved 프로퍼티를 수정해주어야 함
-                            // 왜냐하면, setButtonStatus 메서드가 그 프로퍼리틑 사용하기 떄문
+                            // 왜냐하면, setButtonStatus 메서드가 해당 프로퍼티를 사용하기 떄문
                             senderCell.music?.isSaved = false
                             // 저장 여부가 바뀌었으니, 버튼 스타일 재설정하기
                             senderCell.setButtonStatus()
