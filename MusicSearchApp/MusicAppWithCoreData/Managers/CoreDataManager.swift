@@ -20,7 +20,7 @@ final class CoreDataManager {
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
     
     // 임시저장소 선언
-    lazy var context = appDelegate?.persistentContainer.viewContext
+    lazy var context = appDelegate?.viewContext
     
     typealias DataCompletion = () -> Void
     

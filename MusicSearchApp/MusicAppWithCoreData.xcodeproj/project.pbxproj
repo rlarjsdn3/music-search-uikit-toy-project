@@ -36,6 +36,7 @@
 		9E4D20DC2A8F052C00E54808 /* SavedMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedMusicCell.xib; sourceTree = "<group>"; };
 		9E4D20DF2A8F221400E54808 /* SavedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListViewController.swift; sourceTree = "<group>"; };
 		9E4D20E12A8F2DA100E54808 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		9E5649E92A90655C007319EC /* MusicAppWithCoreData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicAppWithCoreData.entitlements; sourceTree = "<group>"; };
 		9EC755822A8DAF2000993F38 /* MusicAppWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAppWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC755852A8DAF2000993F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC755872A8DAF2000993F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		9EC755842A8DAF2000993F38 /* MusicAppWithCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				9E5649E92A90655C007319EC /* MusicAppWithCoreData.entitlements */,
 				9EC755852A8DAF2000993F38 /* AppDelegate.swift */,
 				9EC755872A8DAF2000993F38 /* SceneDelegate.swift */,
 				9EC7559D2A8DB0DC00993F38 /* Views */,
@@ -381,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MusicAppWithCoreData/MusicAppWithCoreData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4DQM269FVB;
@@ -396,7 +399,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kunwoo-kim.uikit.MusicAppWithCoreData";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kunwoo-kim.uikit.MusicApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -409,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MusicAppWithCoreData/MusicAppWithCoreData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4DQM269FVB;
@@ -424,7 +428,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kunwoo-kim.uikit.MusicAppWithCoreData";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kunwoo-kim.uikit.MusicApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
