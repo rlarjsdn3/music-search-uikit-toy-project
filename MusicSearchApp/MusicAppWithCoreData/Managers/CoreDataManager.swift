@@ -134,7 +134,7 @@ final class CoreDataManager {
             // 데이터 요청서 정의하기
             let request = NSFetchRequest<NSManagedObject>(entityName: self.modelName)
             // 요청서에 조건 설정하기 (savedData가 동일한 데이터 찾기)
-            request.predicate = NSPredicate(format: "savedData = %@", savedDate as CVarArg)
+            request.predicate = NSPredicate(format: "savedDate = %@", savedDate as CVarArg)
             
             do {
                 // 임시 저장소에서 해당 조건에 맞는 데이터 가져오기

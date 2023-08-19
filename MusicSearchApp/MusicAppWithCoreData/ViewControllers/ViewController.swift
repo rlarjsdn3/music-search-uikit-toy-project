@@ -29,12 +29,14 @@ class ViewController: UIViewController {
     // 뷰가 화면에 나타나기 전 호출되는 메서드 (여러번 호출 가능)
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // 테이블 뷰 리로드헤서 데이터 새로 불러오기
+        // 불러온 음악 데이터가 찜한 상태인지 확인하기
+        musicManager.checkWhetherSaved()
+        // 테이블 뷰 리로드하기
         musicTableView.reloadData()
     }
     
     func setupNaviBar() {
-        self.title = "음악 검색"
+        self.navigationItem.title = "음악 검색"
     }
     
     func setupSearchBar() {

@@ -69,7 +69,7 @@ class SavedMusicCell: UITableViewCell {
         artistNameLabel.text = musicSaved.artistName
         albumNameLabel.text = musicSaved.albumName
         releaseDateLabel.text = musicSaved.releaseDate
-        saveDateLabel.text = "Saved Date: \(musicSaved.savedDateString ?? "")"
+        saveDateLabel.text = musicSaved.savedDateString ?? ""
         messageLabel.text = musicSaved.myMessage
         setButtonStatus()
     }
@@ -90,7 +90,7 @@ class SavedMusicCell: UITableViewCell {
     }
     
     func setButtonStatus() {
-        saveButton.setImage(UIImage(systemName: "heart"), for: .normal)
+        saveButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {

@@ -28,7 +28,7 @@ class SavedListViewController: UIViewController {
     }
     
     func setupNaviBar() {
-        self.title = "찜한 음악 목록"
+        self.navigationItem.title = "찜한 목록"
     }
     
     func setupTableView() {
@@ -53,7 +53,7 @@ class SavedListViewController: UIViewController {
         )
         // 얼럿창에 텍스트필드 추가하기
         alert.addTextField { textField in
-            textField.placeholder = message
+            textField.text = message
         }
         
         // 확인 버튼 동작 구현

@@ -144,8 +144,11 @@ final class MusicManager {
             if musicSavedArrays.contains(where: {
                 ($0.songName == music.songName) && ($0.artistName == music.artistName)
             }) {
-                // 이미 저장된 데이터라고 설정
+                // 찜한 상태라고 설정
                 music.isSaved = true
+            } else {
+                // 찜하지 않은 상태라고 설정
+                music.isSaved = false
             }
         }
     }
