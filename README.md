@@ -6,29 +6,11 @@
 `기술스택` <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white"/> <img src="https://img.shields.io/badge/Xcode-147EFB?style=flat-square&logo=Xcode&logoColor=white"/> <br>
 `게시일자` 2023년 8월 19일(토) <br>
 
-## ✅Features
-
-* 음악 검색하기
-* 음악 찜하기
-* 아이클라우드 동기화
-
-## ⚒️Built With
-
-* Swift/UIKit
-* URLSession
-* CoreData
-
 ## 🏙️Images
 
 | 이미지 |
 | :--: |
 | <img src="https://github.com/rlarjsdn3/music-search-uikit-toy-project/assets/21079970/96d846a2-1ab1-43bc-a92a-abbff55a130d" align="center" width="235" height="511"> |
-
-
-## 📚What I Learned
-
-* `코어 데이터`의 기본적인 사용법과 CRUD 연산을 하는 법
-* `코어 데이터`와 `iCoud`로 기기 간 동기화 서비스를 제공하는 법 
  
 ## 👩🏻‍💻Reference
 
